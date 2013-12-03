@@ -14,7 +14,7 @@ public class VariableReplacerUtil {
 				sb.append(variable).append("=\"").append(vars.get(variable)).append("\"\n");
 			}
 		}
-		sb.append("\n");
+		/////sb.append("\n");
 		sb.append(originalCommand);
 		return sb.toString();
 	}
