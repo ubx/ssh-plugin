@@ -10,7 +10,7 @@ public class VariableReplacerUtil {
         vars.remove("_"); //why _ as key for build tool?
         StringBuilder sb = new StringBuilder();
         for (String variable : vars.keySet()) {
-            originalCommand.replace("${" + variable + "}", vars.get(variable));
+            originalCommand = originalCommand.replace("${" + variable + "}", vars.get(variable));
 //            if (originalCommand.contains(variable)) {
 //                sb.append(variable).append("=\"").append(vars.get(variable)).append("\"\n");
 //            }
